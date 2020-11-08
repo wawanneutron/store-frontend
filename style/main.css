@@ -10844,6 +10844,16 @@ footer p {
   padding-top: 30px;
 }
 
+.navbar-store .logo {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-store .logo:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
 @media (max-width: 991.98px) {
   .navbar-store {
     background-color: #fff !important;
@@ -10876,13 +10886,91 @@ footer p {
   margin-left: -10px;
 }
 
-.navbar-store .navbar-fixed-top.scrolled {
+.navbar-fixed-top.scrolled {
   background-color: #fff !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
+  -webkit-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
 }
 
-.pages-home h5 {
+.page-home h5 {
   font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.page-home .store-trend-categories {
+  margin-top: 30px;
+}
+
+.page-home .store-new-products {
+  margin-top: 30px;
+}
+
+.component-categories {
+  background-color: #f4f4f4;
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.component-categories:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  text-decoration: none;
+}
+
+.component-categories .categories-text {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #0c0d36;
+  margin-top: 12px;
+}
+
+.componet-products {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.componet-products:hover {
+  text-decoration: none;
+}
+
+.componet-products .products-thumbnail {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.componet-products .products-thumbnail:hover .products-image, .componet-products .products-thumbnail:focus .products-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.componet-products .products-thumbnail .products-image {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.componet-products .product-text {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+}
+
+.componet-products .product-price {
+  margin-top: -10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff7158;
 }
 /*# sourceMappingURL=main.css.map */

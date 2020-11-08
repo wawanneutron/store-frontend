@@ -1,5 +1,11 @@
 .navbar-store {
   padding-top: 30px;
+  .logo {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
 
   @include media-breakpoint-down(md) {
     background-color: #fff !important;
@@ -33,9 +39,8 @@
     color: #fefefe;
     margin-left: -10px;
   }
-
-  .navbar-fixed-top.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-  }
+}
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 500ms linear;
 }
