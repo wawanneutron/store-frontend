@@ -10905,7 +10905,92 @@ footer p {
   margin-top: 30px;
 }
 
+.page-details h5 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+}
+
+.page-details .store-gallery {
+  margin-top: 20px;
+}
+
+.page-details .store-gallery img {
+  border-radius: 10px;
+}
+
+.page-details .store-gallery .thumbnail-image {
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+}
+
+@media (max-width: 991.98px) {
+  .page-details .store-gallery .thumbnail-image {
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+.page-details .store-gallery .thumbnail-image:hover, .page-details .store-gallery .thumbnail-image.active {
+  border: 2px solid #ff7158;
+}
+
+.page-details .store-heading {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .page-details .store-heading {
+    margin-top: 20px;
+  }
+}
+
+.page-details .store-heading h1 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #0c0d36;
+  margin-bottom: 0;
+}
+
+.page-details .store-heading .owner {
+  font-weight: normal;
+  font-size: 14px;
+  color: #979797;
+  margin-bottom: 8px;
+}
+
+.page-details .store-heading .price {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff7158;
+}
+
+.page-details .store-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #525252;
+}
+
+.page-details .store-review .media img {
+  max-width: 50px;
+}
+
+.page-details .store-review .media-body {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+.page-details .store-review .media-body h5 {
+  font-size: 16px;
+  color: #0c0d36;
+}
+
 .component-categories {
+  border-radius: 8px;
   background-color: #f4f4f4;
   padding: 30px 30px 10px 30px;
   margin-bottom: 20px;
@@ -10972,5 +11057,44 @@ footer p {
   font-weight: 500;
   font-size: 16px;
   color: #ff7158;
+}
+
+.store-breadcrumbs .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.store-breadcrumbs .breadcrumb-item.active {
+  font-weight: 500;
+  font-size: 14px;
+  color: #0c0d36;
+}
+
+.store-breadcrumbs a {
+  color: #979797;
+}
+
+.slide-fade-enter-active {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.slide-fade-leave-active {
+  -webkit-transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
