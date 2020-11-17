@@ -130,26 +130,34 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Create New Product</h2>
-                <p class="dashboard-subtitle">Create your own product</p>
+                <h2 class="dashboard-title">Shirup Marzan</h2>
+                <p class="dashboard-subtitle">Product Details</p>
               </div>
               <div class="dashboard-content">
                 <div class="row">
                   <div class="col-12">
-                    <form action="#">
+                    <form action="">
                       <div class="card">
                         <div class="card-body">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="storeName">Product Name</label>
-                                <input type="text" class="form-control" />
+                                <label>Product Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="Shirup marzan"
+                                />
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="storeName">Price </label>
-                                <input type="number" class="form-control" />
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  value="876"
+                                />
                               </div>
                             </div>
                             <div class="col-md-12">
@@ -171,39 +179,97 @@
                                 <textarea name="editor"></textarea>
                               </div>
                             </div>
-                            <div class="col-md-12 col-lg-6 was-validated">
-                              <div class="form-group">
-                                <label for="">Thumbnails</label>
-                                <div class="custom-file mb-3">
-                                  <input
-                                    type="file"
-                                    class="custom-file-input"
-                                    id="validatedCustomFile"
-                                    required
-                                  />
-                                  <label
-                                    class="custom-file-label"
-                                    for="validatedCustomFile"
-                                    >Choose file...</label
-                                  >
-                                  <div class="invalid-feedback">
-                                    Example invalid custom file feedback
-                                  </div>
-                                  <p class="text-muted">
-                                    You can select more than one file
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
                           </div>
                           <div class="row">
-                            <div class="col-12 text-right mt-5">
+                            <div class="col-12 text-right mt-3">
                               <button
                                 type="submit"
-                                class="btn btn-success px-5"
+                                class="btn btn-block btn-success px-5"
                               >
                                 Save Now
                               </button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="row mt-5">
+                                <div
+                                  class="col-md-4 col-lg-3 col-sm-4 col-6 mb-4"
+                                >
+                                  <div class="gallery-container">
+                                    <img
+                                      src="/images/product-card-1.png"
+                                      alt=""
+                                      class="w-100"
+                                    />
+                                    <a href="#" class="delete-gallery">
+                                      <img src="/images/ic_remove.svg" alt="" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-md-4 col-lg-3 col-sm-4 col-6 mb-4"
+                                >
+                                  <div class="gallery-container">
+                                    <img
+                                      src="/images/product-card-2.png"
+                                      alt=""
+                                      class="w-100"
+                                    />
+                                    <a href="#" class="delete-gallery">
+                                      <img src="/images/ic_remove.svg" alt="" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-md-4 col-lg-3 col-sm-4 col-6 mb-4"
+                                >
+                                  <div class="gallery-container">
+                                    <img
+                                      src="/images/product-card-3.png"
+                                      alt=""
+                                      class="w-100"
+                                    />
+                                    <a href="#" class="delete-gallery">
+                                      <img src="/images/ic_remove.svg" alt="" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div
+                                  class="col-md-4 col-lg-3 col-sm-4 col-6 mb-4"
+                                >
+                                  <div class="gallery-container">
+                                    <img
+                                      src="/images/product-card-5.png"
+                                      alt=""
+                                      class="w-100"
+                                    />
+                                    <a href="#" class="delete-gallery">
+                                      <img src="/images/ic_remove.svg" alt="" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="col-12 mt-2 was-validated">
+                                  <div class="custom-file mb-3">
+                                    <input
+                                      type="file"
+                                      class="custom-file-input"
+                                      id="validatedCustomFile"
+                                      required
+                                      multiple
+                                    />
+                                    <button
+                                      class="custom-file-label btn-block"
+                                      for="validatedCustomFile"
+                                    >
+                                      Add photo...
+                                    </button>
+                                    <div class="invalid-feedback">
+                                      Pick photo on your file...
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -233,6 +299,11 @@
     <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
     <script>
       CKEDITOR.replace("editor");
+    </script>
+    <script>
+      function thisFileUpload() {
+        document.getElementById("file").click();
+      }
     </script>
   </body>
 </html>

@@ -10841,7 +10841,7 @@ footer p {
 }
 
 .form-control {
-  color: #f3f3f3;
+  color: #666666;
 }
 
 .navbar-store {
@@ -11334,6 +11334,13 @@ footer p {
   color: #0c0d36;
   border-bottom: 3px solid #0c0d36;
   background: none;
+}
+
+.page-dashboard .section-content .dashboard-content .gallery-container .delete-gallery {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 0;
 }
 
 .component-categories {
