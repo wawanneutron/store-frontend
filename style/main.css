@@ -11343,6 +11343,21 @@ footer p {
   right: 0;
 }
 
+.page-dashboard .section-content .dashboard-content .product-title {
+  font-weight: normal;
+  font-size: 16px;
+  color: #c5c5c5;
+  line-height: 28px;
+}
+
+.page-dashboard .section-content .dashboard-content .product-subtitle {
+  line-height: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+  margin-bottom: 20px;
+}
+
 .component-categories {
   border-radius: 8px;
   background-color: #f4f4f4;
